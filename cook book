@@ -1,0 +1,9 @@
+#Explaination of the main variables in run_analysis.R
+
+1. train_set_dir, test_set_dir, train_label_dir, test_label_dir, activity_labels_dir, train_subject_dir, test_subject_dir, feature_dir. These
+variables are directory of downloaded files. We need to ensure the correctness of these directory, otherwise, tables could not be read successfully.
+
+2. final_data_set is a data frame which merge the train data set and test data set of selected variables. In additon, activity name and subject are added into the data frame.
+
+3. second_data_set is a tidy data set with the average of each variable for each activity and each subject in final_data_set.
+
